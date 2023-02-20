@@ -650,6 +650,7 @@ img {
     background-color: var(--color-gray);
   }
   .home__list {
+    margin-bottom: 60px;
     text-align: center;
     font-family: "PoiretOne";
     font-size: 40px;
@@ -657,7 +658,7 @@ img {
     font-style: normal;
     color: var(--color-white);
   }
-  .home__item:not(:last-child) {
+  .home__item {
     margin-bottom: 40px;
   }
   .home__link {
@@ -798,7 +799,6 @@ img {
 }
 @media (max-width: 1200px) {
   .footer {
-    margin-top: 50px;
     margin-bottom: 0;
   }
 }
