@@ -4,6 +4,7 @@
    z-index: 1;
 
    @include small-desktop {
+      margin-top: 50px;
       margin-bottom: 0;
    }
 
@@ -69,6 +70,8 @@ footer.footer-transparent {
    }
 
    @include small-tablet {
+      background-color: var(--color-gray);
+
       p {
          color: var(--color-text);
       }

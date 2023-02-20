@@ -641,20 +641,15 @@ img {
 
 @media (max-width: 768px) {
   .home__mobile {
-    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    margin-bottom: -80px;
     min-width: 100%;
     min-height: 100vh;
     background-color: var(--color-gray);
   }
   .home__list {
-    margin-bottom: 120px;
     text-align: center;
     font-family: "PoiretOne";
     font-size: 40px;
@@ -803,6 +798,7 @@ img {
 }
 @media (max-width: 1200px) {
   .footer {
+    margin-top: 50px;
     margin-bottom: 0;
   }
 }
@@ -862,6 +858,9 @@ footer.footer-transparent svg {
   fill: var(--color-gray);
 }
 @media (max-width: 768px) {
+  footer.footer-transparent {
+    background-color: var(--color-gray);
+  }
   footer.footer-transparent p {
     color: var(--color-text);
   }
