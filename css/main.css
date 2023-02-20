@@ -326,6 +326,7 @@ img {
 .cart__list--top {
   text-align: center;
   margin-bottom: 25px;
+  font-style: normal;
 }
 .cart span.small {
   text-transform: lowercase;
