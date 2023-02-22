@@ -21,12 +21,13 @@
       bottom: 35px;
       left: 50%;
       transform: translateX(-50%);
-      color: var(--color-white);
-      background-color: var(--color-orange-opacity);
-      border-radius: 100px;
-      border: 2px solid var(--color-white);
-      font-size: 20px;
-      padding: 10px 0px;
+
+      &:hover {
+        color: var(--color-white);
+        background-color: var(--color-orange);
+        border: 2px solid var(--color-white);
+        transition: all .5s;
+      }
     }
 
     @include small-tablet {
