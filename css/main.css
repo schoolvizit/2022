@@ -845,10 +845,16 @@ img {
     margin-right: 10px;
   }
 }
+.footer__link p:hover {
+  color: var(--color-text);
+}
 .footer__link svg {
   fill: var(--color-lightgray);
   width: 18px;
   height: 18px;
+}
+.footer__link svg:hover {
+  fill: var(--color-text);
 }
 @media (max-width: 576px) {
   .footer__link svg {
