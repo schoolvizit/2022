@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const toTop = document.querySelector('.to-top');
   window.addEventListener('scroll', () => {
     let scrollDistance = window.scrollY;
-    if (scrollDistance >= 800) {
+    if (scrollDistance >= 900) {
       toTop.classList.add('to-top--active');
     } else {
       toTop.classList.remove('to-top--active');

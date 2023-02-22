@@ -98,8 +98,9 @@ img {
     margin: 0 auto;
     text-align: center;
     width: calc((100% - (var(--elements) - 1) * var(--gap)) / (var(--elements)));
-    background-color: var(--color-white);
     padding: 20px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 50px -10px rgba(0, 0, 0, 0.2);
 
     @include tablet {
       --elements: 1;
@@ -224,14 +225,12 @@ img {
   transition: all .5s;
 
   &:hover {
-  color: var(--color-text);
-  background-color: transparent;
-  border: 2px solid var(--color-orange);
-  transition: all .5s;
+    color: var(--color-text);
+    background-color: transparent;
+    border: 2px solid var(--color-orange);
+    transition: all .5s;
+  }
 }
-}
-
-
 
 .gallery {
   margin: 60px 0 20px;

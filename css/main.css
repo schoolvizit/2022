@@ -240,8 +240,9 @@ img {
   margin: 0 auto;
   text-align: center;
   width: calc((100% - (var(--elements) - 1) * var(--gap)) / (var(--elements)));
-  background-color: var(--color-white);
   padding: 20px;
+  border-radius: 20px;
+  box-shadow: 20px 20px 50px -10px rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 1024px) {
   .cart__body {
