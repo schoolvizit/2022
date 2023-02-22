@@ -80,46 +80,38 @@ document.querySelectorAll('.select__dropdown').forEach(function (dropDownWrapper
 });
 
 
-// smooth-scroll
-
-// const scroll = new SmoothScroll('.to-top');
-const toTop = document.querySelector('.to-top');
-const journalHeight = document.querySelector('.info').offsetHeight;
-
-const isVisibleToTop = (y = 0) => {
-  if (y >= journalHeight) {
-    toTop.classList.add('to-top--active');
-  } else {
-    toTop.classList.remove('to-top--active');
-  }
-}
-
-window.addEventListener('scroll', () => {
-  let y = window.scrollY;
-  isVisibleToTop(y);
+// scroll
+document.addEventListener('DOMContentLoaded', () => {
+  const toTop = document.querySelector('.to-top');
+  window.addEventListener('scroll', () => {
+    let scrollDistance = window.scrollY;
+    if (scrollDistance >= 800) {
+      toTop.classList.add('to-top--active');
+    } else {
+      toTop.classList.remove('to-top--active');
+    }
+  });
 });
 
 
 // active class of menu items onscroll
 
-window.addEventListener('scroll', () => {
-  let scrollDistance = window.scrollY;
+// window.addEventListener('scroll', () => {
+//   let scrollDistance = window.scrollY;
+//   if (window.innerWidth > 768) {
+//     document.querySelectorAll('.journal').forEach((el, i) => {
+//       if (el.offsetTop - document.querySelector('.header__menu').clientHeight <= scrollDistance) {
+//         document.querySelectorAll('.header__menu a').forEach((el) => {
+//           if (el.classList.contains('active')) {
+//             el.classList.remove('active');
+//           }
+//         });
 
-
-  if (window.innerWidth > 768) {
-    document.querySelectorAll('.journal').forEach((el, i) => {
-      if (el.offsetTop - document.querySelector('.header__menu').clientHeight <= scrollDistance) {
-        document.querySelectorAll('.header__menu a').forEach((el) => {
-          if (el.classList.contains('active')) {
-            el.classList.remove('active');
-          }
-        });
-
-        document.querySelectorAll('.header__menu li')[i].querySelector('a').classList.add('active');
-      }
-    });
-  }
-});
+//         document.querySelectorAll('.header__menu li')[i].querySelector('a').classList.add('active');
+//       }
+//     });
+//   }
+// });
 
 // галлерея
 
