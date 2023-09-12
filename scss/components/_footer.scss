@@ -57,10 +57,10 @@
             fill: var(--color-text);
          }
 
-         @include mobile {
-            width: 14px;
-            height: 14px;
-         }
+         // @include mobile {
+         //    width: 14px;
+         //    height: 14px;
+         // }
       }
    }
 }

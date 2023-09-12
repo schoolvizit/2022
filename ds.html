@@ -4,10 +4,10 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="shortcut icon" href="shutter.ico" type="image/x-icon">
+   <link rel="shortcut icon" href="photo-camera.ico" type="image/x-icon">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <meta name="theme-color" content="#111111">
-   <title>Site-2022</title>
+   <title>School-2022</title>
    <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -48,8 +48,8 @@
       </header>
 
       <main class="main">
-         <section class="gallery">
-            <div class="container">
+         <div class="container">
+            <section class="gallery">
                <div class="journal__gallery gallery">
                   <div class="gallery__body carts">
                      <div class="carts__inner">
@@ -91,11 +91,11 @@
                      </div>
                   </div>
                </div>
-            </div>
-         </section>
 
-         <section class="info">
-            <div class="container">
+            </section>
+
+            <section class="info">
+
                <div class="info__cart cart">
                   <div class="cart__body">
                      <div class="cart__info">
@@ -104,10 +104,10 @@
                         </p>
                         <ul class="cart__list cart__list--top">
                            <li class="item">
-                              <span>мягкая</span> обложка <span class="price-one">50</span><span class="small">р</span>
+                              <span>мягкая</span> обложка <span class="price-one">55</span><span class="small">р</span>
                            </li>
                            <li class="item">
-                              <span>твёрдая</span> обложка <span class="price-two">57</span><span class="small">р</span>
+                              <span>твёрдая</span> обложка <span class="price-two">65</span><span class="small">р</span>
                            </li>
                         </ul>
                         <div class="cart__select select">
@@ -117,11 +117,11 @@
                               <div class="select__dropdown">
                                  <button class="select__btn">8 страниц</button>
                                  <ul class="select__list">
-                                    <li class="select__list-item" data-value="50">8 страниц</li>
-                                    <li class="select__list-item" data-value="55">12 страниц</li>
-                                    <li class="select__list-item" data-value="60">16 страниц</li>
-                                    <li class="select__list-item" data-value="65">20 страниц</li>
-                                    <li class="select__list-item" data-value="70">24 страницы</li>
+                                    <li class="select__list-item" data-value="55">8 страниц</li>
+                                    <li class="select__list-item" data-value="60">12 страниц</li>
+                                    <!-- <li class="select__list-item" data-value="65">16 страниц</li>
+                                       <li class="select__list-item" data-value="70">20 страниц</li>
+                                       <li class="select__list-item" data-value="75">24 страницы</li> -->
                                  </ul>
                               </div>
                            </div>
@@ -137,11 +137,7 @@
                      <div class="cart__video">
                         <button class="btn btn-journal">смотреть журнал</button>
                         <a data-fslightbox="video-journal" href="video/01.mp4">
-                           <video controls="controls">
-                              <source src="video/01.mp4" type="video/01.mp4">
-                              <source src="video/01.webm" type="video/01.webm">
-                              <source src="video/01.ogv" type="video/01.ogv">
-                           </video>
+                           <video src="video/01.mp4"></video>
                         </a>
                      </div>
                   </div>
@@ -153,10 +149,10 @@
                         </p>
                         <ul class="cart__list cart__list--top">
                            <li class="item">
-                              <span>мягкое</span> трюмо <span class="price-one">43</span><span class="small">р</span>
+                              <span>мягкое</span> трюмо <span class="price-one">50</span><span class="small">р</span>
                            </li>
                            <li class="item">
-                              <span>твёрдое</span> трюмо <span class="price-two">50</span><span class="small">р</span>
+                              <span>твёрдое</span> трюмо <span class="price-two">60</span><span class="small">р</span>
                            </li>
                         </ul>
                         <ul class="cart__list">
@@ -171,9 +167,7 @@
                      <div class="cart__video">
                         <button class="btn btn-trumo">смотреть трюмо</button>
                         <a data-fslightbox="video-trumo" href="video/02.mp4">
-                           <video controls="controls">
-                              <source src="video/02.mp4" type="video/02.mp4">
-                           </video>
+                           <video src="video/02.mp4"></video>
                         </a>
                      </div>
                   </div>
@@ -188,7 +182,7 @@
                               <span>мягкая</span> папка <span class="price-one">40</span><span class="small">р</span>
                            </li>
                            <li class="item">
-                              <span>твёрдая</span> папка <span class="price-two">47</span><span class="small">р</span>
+                              <span>твёрдая</span> папка <span class="price-two">50</span><span class="small">р</span>
                            </li>
                         </ul>
                         <ul class="cart__list">
@@ -202,33 +196,31 @@
                      <div class="cart__video">
                         <button class="btn btn-papka">смотреть папку</button>
                         <a data-fslightbox="video-papka" href="video/03.mp4">
-                           <video controls="controls">
-                              <source src="video/03.mp4" type="video/03.mp4">
-                           </video>
+                           <video src="video/03.mp4"></video>
                         </a>
                      </div>
                   </div>
                </div>
-            </div>
-         </section>
+            </section>
+         </div>
       </main>
 
-      <footer class="footer">
+      <footer class="footer footer-transparent">
          <div class="container">
             <div class="footer__body">
                <p class="footer__text">Андрей Галинский</p>
                <ul class="footer__items">
                   <li class="footer__item">
-                     <a href="https://t.me/AndreyGalinsky" target="blank" class="footer__link">
+                     <a href="mailto:galynski@yahoo.com" target="blank" class="footer__link">
                         <svg>
-                           <use xlink:href="img/sprite.svg#telegram"></use>
+                           <use xlink:href="img/sprite.svg#mail"></use>
                         </svg>
                      </a>
                   </li>
                   <li class="footer__item">
-                     <a href="viber://chat?number=%2B375292138213" target="blank" class="footer__link">
+                     <a href="https://t.me/AndreyGalinsky" target="blank" class="footer__link">
                         <svg>
-                           <use xlink:href="img/sprite.svg#viber"></use>
+                           <use xlink:href="img/sprite.svg#telegram"></use>
                         </svg>
                      </a>
                   </li>

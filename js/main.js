@@ -56,7 +56,7 @@ document.querySelectorAll('.select__dropdown').forEach(function (dropDownWrapper
       selectBtn.innerText = this.innerText;
       selectBtn.focus();
       selectPriceOne.innerText = this.dataset.value;
-      selectPriceTwo.innerText = (+selectPriceOne.innerText + 7);
+      selectPriceTwo.innerText = (+selectPriceOne.innerText + 10);
       selectBtn.classList.remove('active');
       selectList.classList.remove('select__list--visible');
     })

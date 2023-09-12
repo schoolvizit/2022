@@ -26,6 +26,15 @@ body {
   max-width: var(--container-width);
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-light);
+}
+
 .to-top {
   position: fixed;
   display: flex;
@@ -72,8 +81,8 @@ img {
 }
 
 .info {
-  background-color: var(--color-light);
-  padding: 50px 0;
+  // margin: 50px 0;
+  margin-bottom: 50px;
 }
 
 .cart {
@@ -233,7 +242,8 @@ img {
 }
 
 .gallery {
-  margin: 60px 0 20px;
+  margin: 40px 0 20px;
+
 
   &__body {
     display: flex;
@@ -273,3 +283,65 @@ img {
     }
   }
 }
+
+.description {
+  color: var(--color-text);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 50px;
+
+  &__text {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+
+  &__list {
+    text-align: left;
+    font-family:  var(--font-family);
+    font-weight: 400;
+    font-style: italic;
+
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  &__list li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.2;
+
+    @include small-tablet {
+      font-size: 16px;
+    }
+  }
+
+  &__list li::before {
+    content: "";
+    display: inline-block;
+    top: 0;
+    left: 0;
+    background-image: url(../img/tick.svg);
+    @include bg-cover;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+
+    @include small-tablet {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  &__list--top li::before {
+    display: none;
+  }
+
+}
+
+
+
